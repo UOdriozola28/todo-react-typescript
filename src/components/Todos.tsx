@@ -1,8 +1,4 @@
-import {
-  type ListOfTodos,
-  type TodoId,
-  type TodoIdAndCompleted,
-} from '../types'
+import type { ListOfTodos, TodoId, TodoIdAndCompleted } from '../types'
 import { Todo } from './Todo'
 import { useAutoAnimate } from '@formkit/auto-animate/react'
 
@@ -17,7 +13,6 @@ export const Todos = ({
   onRemoveTodo,
   onToggleCompleteTodo,
 }: Props) => {
-  
   const [parent] = useAutoAnimate()
 
   return (
